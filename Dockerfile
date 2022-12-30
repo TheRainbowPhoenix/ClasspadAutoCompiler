@@ -82,3 +82,6 @@ RUN set -ex \
 # ENTRYPOINT ["docker-entrypoint.sh"]
 
 # CMD [ "node" ]
+
+# RUN npm install
+# RUN npm run build

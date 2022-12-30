@@ -16,10 +16,13 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [3000],
+	"forwardPorts": [3000],
+
+	// "workspaceFolder": "/srv",
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cat /etc/os-release",
+	"postCreateCommand": "cd /workspaces/${RepositoryName} && npm install && sh setup.sh",
+	"postStartCommand": "cd /workspaces/${RepositoryName} && echo 'Running on http://127.0.0.1:3000' && npm run dev",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -83,7 +83,7 @@ async function wipeDir(fpath) {
 
 // compile
 async function compile(fullpath) {
-    let command = `cd ${fullpath} && make all APP_NAME="compiled" SDK_DIR="/home/sean/hollyhock-2/sdk"`;
+    let command = `cd ${fullpath} && make all APP_NAME="compiled" SDK_DIR="/opt/cross/hollyhock-2/sdk"`;
     // copy the makefile and linker files
     await fs.promises.copyFile(path.join(process.cwd(), 'Makefile'), path.join(fullpath, 'Makefile'));
     await fs.promises.copyFile(path.join(process.cwd(), 'linker_hhk.ld'), path.join(fullpath, 'linker_hhk.ld'));

@@ -2,9 +2,9 @@
 # The .hhk file is the original format, the bin file is a newer format.
 # APP_NAME:=compiled
 
-export PATH := $(PATH):/home/sean/opt/cross/bin/
+export PATH := $(PATH):/opt/cross/bin/
 
-NEWLIB_DIR=/home/sean/build-newlib/sh-elf/newlib/
+NEWLIB_DIR=/usr/local/sh-elf/lib
 
 ifndef SDK_DIR
 $(error You need to define the SDK_DIR environment variable, and point it to the sdk/ folder)
