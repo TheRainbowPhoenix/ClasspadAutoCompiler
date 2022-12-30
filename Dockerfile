@@ -1,4 +1,4 @@
-FROM 'pho3be/sh4devenvgitpod'
+FROM pho3be/sh4devenvgitpod:latest
 
 USER root
 
